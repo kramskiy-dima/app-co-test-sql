@@ -1,0 +1,62 @@
+@import "../base/varibles";
+
+.header-site-main {
+  width: 100%;
+  background: url("../../images/header-bg.png") top no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  color: $whitecolor;
+  padding-top: 24px;
+  padding-bottom: 16px;
+
+  .header-logo {
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 50px;
+  }
+
+  .section-hero {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+
+    .content-hero {
+      width: 100%;
+      text-align: left;
+
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 24px;
+      }
+      p {
+        margin-bottom: 32px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 142%;
+      }
+      .btn-hero {
+        display: inline-block;
+        background: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 1em 2em;
+        font-family: inherit;
+        font-size: 1em;
+        font-weight: 400;
+        text-align: center;
+        color: #3a80ba;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+
+    .img-hero {
+      position: relative;
+      margin-left: 100px;
+      top: -40px;
+    }
+  }
+}

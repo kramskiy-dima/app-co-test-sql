@@ -1,0 +1,57 @@
+.site-footer-main {
+  background: url("../../images//footer-bg.png") top no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 30px 0px;
+
+  .form {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    width: 580px;
+    margin: 0 auto 1em;
+
+    .form-input {
+      border: none;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 1em;
+      padding: 1em 1.25em;
+      color: #7e7e7e;
+      outline: none;
+      width: 100%;
+    }
+
+    .btn-sbs {
+      display: inline-block;
+      background: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 1em 2em;
+      font-family: inherit;
+      font-size: 1em;
+      font-weight: 400;
+      text-align: center;
+      color: #3a80ba;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  .footer-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 142%;
+    color: $whitecolor;
+
+    .logo-footer {
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+}

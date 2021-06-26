@@ -1,0 +1,236 @@
+.nav-link {
+  color: $greycolor;
+}
+
+.active-nav-link {
+  color: $bluecolor;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style-image: url("../../images/arrow-link.svg");
+
+  .item {
+    margin: 10px;
+    &:first-child {
+      margin-left: 0;
+      list-style-image: none;
+    }
+  }
+}
+
+.section-users {
+  padding: 16px 0 24px 0;
+
+  h2 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 16px;
+  }
+
+  .table {
+    width: 100%;
+    border-radius: 30px;
+
+    th,
+    td {
+      font-size: 1em;
+      font-weight: 400;
+      text-align: left;
+    }
+
+    thead {
+      th {
+        background: $bluecolor;
+        padding: 0.9em 1.5em;
+        color: $light-text-color;
+
+        &:first-child {
+          border-top-left-radius: 8px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 8px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        background: $first-table-color;
+        cursor: pointer;
+
+        &:nth-child(2n + 1) {
+          background: $second-table-color;
+        }
+
+        &:last-child {
+          td:first-child {
+            border-bottom-left-radius: 8px;
+          }
+
+          td:last-child {
+            border-bottom-right-radius: 8px;
+          }
+        }
+
+        td {
+          padding: 6px 1.5em;
+          color: $dark-text-color;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    list-style: none;
+    user-select: none;
+
+    .pagination-btn {
+      display: inline-block;
+      background: $whitecolor;
+      border: 2px $border-color solid;
+      border-radius: 8px;
+      width: 48px;
+      height: 48px;
+      margin: 0 4px;
+      font-size: 1em;
+      color: $dark-text-color;
+      line-height: 48px;
+      text-align: center;
+      cursor: pointer;
+
+      &.active {
+        background: $bluecolor;
+        border-color: $bluecolor;
+        color: $light-text-color;
+      }
+    }
+
+    .pagination-arrow {
+      margin: 5px 24px 0;
+      cursor: pointer;
+
+      &.disabled {
+        cursor: not-allowed;
+
+        path {
+          stroke: #ccc;
+        }
+      }
+
+      path {
+        stroke: $bluecolor;
+      }
+    }
+  }
+
+  .chart-wrapper {
+    height: 60vh;
+  }
+}
+
+// .breadcrumb {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   margin: 0 0 1em;
+//   padding: 0;
+//   list-style-image: url("../resources/chevron-right.svg");
+
+//   .breadcrumb-item {
+//     margin-left: 1.4em;
+//     height: 1.5em;
+
+//     &:first-child {
+//       margin-left: 0;
+//       list-style: none;
+//     }
+
+//     &:last-child {
+//       .breadcrumb-link {
+//         color: $bluecolor;
+//       }
+//     }
+
+//     .breadcrumb-link {
+//       color: #cccccc;
+//       outline: none;
+//     }
+//   }
+// }
+
+// .dropdown-wrapper {
+//   position: relative;
+//   min-width: 200px;
+//   user-select: none;
+
+//   .dropdown-header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     border: 1px $border-color solid;
+//     border-radius: 8px;
+//     font-size: 1em;
+//     padding: 8px 14px;
+//     cursor: pointer;
+
+//     &.active {
+//       border-bottom: 1px transparent solid;
+//       border-bottom-left-radius: 0px;
+//       border-bottom-right-radius: 0px;
+//     }
+
+//     svg {
+//       width: 1em;
+//       height: 1em;
+//       margin-left: 8px;
+//     }
+//   }
+
+//   .dropdown-list {
+//     display: none;
+//     flex-direction: column;
+//     position: absolute;
+//     width: 100%;
+//     max-height: 200px;
+//     background: $whitecolor;
+//     border: 1px $border-color solid;
+//     border-bottom-left-radius: 8px;
+//     border-bottom-right-radius: 8px;
+//     overflow-x: auto;
+
+//     &.open {
+//       display: flex;
+//     }
+
+//     .dropdown-list-item {
+//       border: none;
+//       background: none;
+//       border-bottom: 1px $border-color solid;
+//       font-family: inherit;
+//       font-size: 0.9em;
+//       padding: 8px 14px;
+//       color: $dark-text-color;
+//       cursor: pointer;
+//       outline: none;
+
+//       &:last-child {
+//         border: none;
+//       }
+
+//       &:hover {
+//         background: $border-color;
+//       }
+//     }
+//   }
+// }
