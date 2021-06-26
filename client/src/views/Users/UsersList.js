@@ -21,6 +21,7 @@ export default function UserList() {
         setLoading(true);
         const { data } = await axios.get(`/users`);
         setUsers(data);
+        setLoading(false);
       } catch (error) {
         console.log(error);
       } finally {

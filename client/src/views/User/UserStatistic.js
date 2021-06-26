@@ -20,6 +20,7 @@ export default function UserStatistic() {
         setLoading(true);
         const { data } = await axios.get(` /user/${params.id}`);
         setUser(data.data);
+        setLoading(false);
       } catch (error) {
         console.log(error);
       } finally {
