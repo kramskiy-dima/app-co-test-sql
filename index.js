@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 8082;
 
 app.use(express.json({ extended: true }));
 app.use(cors());
+app.set("port", PORT);
 
 if (process.env.NODE_ENV === "production") {
   app.use("/", express.static(path.join(__dirname, "client", "build")));
