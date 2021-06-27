@@ -87,7 +87,7 @@ let db = new sqlite3.Database(
       console.error(err.message);
       return;
     }
-    console.log("good");
+
     await createUsersTable(db);
     await createStatisticTable(db);
   }

@@ -1,6 +1,4 @@
 import { useState } from "react";
-// import ChevronDownIcon from "./ChevronDownIcon";
-// import ChevronUpIcon from "./ChevronUpIcon";
 import { ReactComponent as DropDownIcon } from "../../images/drop-down-icon.svg";
 import { ReactComponent as DropUpIcon } from "../../images/drop-up-icon.svg";
 

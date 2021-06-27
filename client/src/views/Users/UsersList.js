@@ -19,7 +19,9 @@ export default function UserList() {
     const apiRequest = async () => {
       try {
         setLoading(true);
+
         const { data } = await axios.get(`/users`);
+
         setUsers(data);
         setLoading(false);
       } catch (error) {

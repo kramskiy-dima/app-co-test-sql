@@ -18,7 +18,7 @@ export default function UserStatistic() {
     const apiRequest = async () => {
       try {
         setLoading(true);
-        const { data } = await axios.get(` /user/${params.id}`);
+        const { data } = await axios.get(`/user/${params.id}`);
         setUser(data.data);
         setLoading(false);
       } catch (error) {
