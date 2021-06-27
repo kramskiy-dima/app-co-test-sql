@@ -58,13 +58,7 @@ export default function UserList() {
             </li>
           </ul>
           <h2>Users statistics</h2>
-          {loading ? (
-            <div>
-              <Loader />
-            </div>
-          ) : (
-            <CreateTable users={currentPortion} />
-          )}
+          {loading ? <Loader /> : <CreateTable users={currentPortion} />}
           <Pagination
             pageCount={paginationArr.length}
             onPageChange={(page) => setCurrentPage(page + 1)}

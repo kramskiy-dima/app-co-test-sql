@@ -20,7 +20,7 @@ const createTable = memo(({ users }) => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user) => (
+          {users?.map((user) => (
             <tr key={user.id} onClick={() => history.push(`/user/${user.id}`)}>
               <td>{user.id}</td>
               <td>{user.first_name}</td>
